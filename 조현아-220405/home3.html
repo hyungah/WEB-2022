@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#topGround {
+		background-color:#FFB6C1;
+		width: 100%;
+		display: flex;
+		padding: 10px;
+		margin: -10px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	h1 {
+		animation-name:show;	
+		animation-duration: 0.6s;
+		color: white;
+	}
+	@keyframes show{
+	0% {margin-left: 100%; width: 300%;}
+	100% {margin-left: 0%; width: 100%;}
+	}
+</style>
+<meta charset="UTF-8">
+
+<title>과제 3 </title>
+</head>
+<body>
+<form action="MunJae3.jsp">
+	<div id="topGround">
+	<div>
+	<h1>JSP 202021179 조현아</h1>
+	</div>
+	</div>
+	<div id="TextTitle" align="center">
+	이름 : <input type="text" name="name" class="form-control form-control" placeholder="이름을 입력해주세요." style="width: 20%;">
+	</div>
+	<div align="center">
+	<select name="Gender" class="custom-select">
+    <option selected value="*성별을 선택하지 않음*">성별을 선택해주세요</option>
+    <option value="남성">남성</option>
+    <option value="여성">여성</option>
+  	</select><br>
+	<input type="submit" value="전송"><br>
+	</div>
+</form>
+</body>
+</html>

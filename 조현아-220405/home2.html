@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#topGround {
+		background-color:#FFB6C1;
+		width: 100%;
+		display: flex;
+		padding: 10px;
+		margin: -10px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.form-group {
+		margin-top: 10px;
+	}
+	h1 {
+		animation-name:show;	
+		animation-duration: 0.6s;
+		color: white;
+	}
+	@keyframes show{
+	0% {margin-left: 100%; width: 300%;}
+	100% {margin-left: 0%; width: 100%;}
+	}
+</style>
+<meta charset="UTF-8">
+<title>과제 2</title>
+</head>
+<body>
+<form action="MunJae2.jsp">
+	<div id="topGround">
+	<div><h1>JSP 202021179 조현아</h1></div>
+	</div>
+	<div id="TextTitle">
+	글 제목 : <input type="text" name="title" class="form-control form-control" placeholder="제목을 입력해주세요." style="width: 50%;">
+	</div>
+	<div class="form-group">
+  	<label for="comment">Comment:</label>
+  	<textarea class="form-control" rows="5" name="commentValue" id="comment" placeholder="내용을 입력해주세요"></textarea>
+	</div>
+	<input type="submit" value="전송">
+</form>
+</body>
+</html>
