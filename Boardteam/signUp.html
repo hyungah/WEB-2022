@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#topGround {
+		background-color: #AFEEEE;
+		width: 100%;
+		display: flex;
+		padding: 10px;
+		margin: -10px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	h1 {
+		animation-name:show;	
+		animation-duration: 0.6s;
+		color: white;
+	}
+	@keyframes show{
+	0% {margin-left: 100%; width: 300%;}
+	100% {margin-left: 0%; width: 100%;}
+	}
+</style>
+<script>
+	
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<title>JSP과제 3번문제</title>
+</head>
+<body>
+<form action="signUpPro.jsp" class="was-validated" method="post">
+	<div id="topGround">
+	<div>
+	<h1>JSP 팀  - 조이박</h1>
+	</div>
+	</div>
+	<div class="form-group">
+      <label for="email">이메일 :</label>
+      <input type="email" class="form-control" id="email" placeholder="이메일을 입력해주세요" name="email" required>
+      <div class="valid-feedback">사용 가능합니다.</div>
+      <div class="invalid-feedback">필드안에 기재하길 바랍니다.</div>
+    </div>
+    <div class="form-group">
+      <label for="uname">이름 :</label>
+      <input type="text" class="form-control" id="uname" placeholder="이름을 입력해주세요" name="uname" required>
+      <div class="valid-feedback">사용 가능합니다.</div>
+      <div class="invalid-feedback">필드안에 기재하길 바랍니다.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">비밀번호 :</label>
+      <input type="password" class="form-control" id="pwd" placeholder="비밀번호를 입력해주세요" name="pwd" required>
+      <div class="valid-feedback">사용 가능합니다.</div>
+      <div class="invalid-feedback">필드안에 기재하길 바랍니다.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" id="cb" required> 
+        <div class="valid-feedback">확인했습니다</div>
+        <div class="invalid-feedback">체크박스에 동의해주십시오.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="alert('회원가입 완료')">가입하기</button>
+  </form>
+</form>
+</body>
+</html>
